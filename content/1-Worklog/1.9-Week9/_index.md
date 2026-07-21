@@ -5,53 +5,66 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+WEEK 9 REPORT
 
+Work Acquisitions
+*Understanding the AWS Cloud Development Kit (AWS CDK) and its basic components.
 
-### Week 9 Objectives:
+*Practicing deploying AWS infrastructure using Infrastructure as Code (IaC) via AWS CDK.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+*Researching how to build and manage AWS resources using programming languages.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+*Understanding the Three-Tier Architecture model, including the Presentation Layer, Application Layer, and Database Layer.
 
+*Practicing deploying components such as ECS, Application Load Balancer (ALB), and API Gateway using AWS CDK.
 
-### Week 9 Achievements:
+*Understanding Nested Stack for more efficient infrastructure organization and management.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+*Participating in discussions with the team on database design and system interface design in Figma.
 
-* Successfully created and configured an AWS Free Tier account.
+*Assisting in building technical documentation and updating the team's project progress.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+Achieved Results
+*Understanding the operating principles and benefits of Infrastructure as Code.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+*Understand the process of deploying infrastructure using AWS CDK.
 
-* Used AWS CLI to perform basic operations such as:
+*Understand the structure and practical application of the Three-Tier Architecture model.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+*Successfully practice creating and managing several AWS resources using CDK.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+*Complete assigned tasks in the team project.
+
+*Improve teamwork skills, technical communication, and project management.
+
+Challenges Encountered:
+*Lack of familiarity with AWS CDK project syntax and structure.
+
+*Difficulty in linking AWS services together during infrastructure deployment.
+
+*Spending a lot of time learning how to organize Nested Stacks and manage dependencies between resources.
+
+*Some errors occurred during service deployment and configuration.
+
+Solutions:
+*Read more official AWS CDK documentation and refer to practical examples.
+
+*Discuss with mentors and team members to better understand the system architecture.
+
+*Perform multiple test deployments to identify the root cause of errors.
+
+*Break down infrastructure components for easier testing and troubleshooting.
+
+Next Week's Plan:
+
+*Learn about Serverless architecture on AWS.
+
+*Practice building applications using AWS Lambda, API Gateway, and DynamoDB.
+
+*Study CI/CD processes with AWS CodePipeline.
+
+Learn about CloudWatch and AWS X-Ray for system monitoring.
+
+Continue developing project functionalities according to the plan.
+
+Complete technical documentation and update project progress.
