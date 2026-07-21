@@ -6,15 +6,14 @@ chapter : false
 pre : " <b> 5.4. </b> "
 ---
 
-#### Overview
+In a Cloud Office system, the Backend Server is deployed in a Private Subnet to limit direct internet access. However, the server still needs to connect to several AWS services to support system operation, such as:
 
-+ In this section, you will create an Interface endpoint to access Amazon S3 from a simulated on-premises environment. The Interface endpoint will allow you to route to Amazon S3 over a VPN connection from your simulated on-premises environment.
+AWS Systems Manager (SSM) for server administration.
 
-+ Why using **Interface endpoint**: 
-    + Gateway endpoints only work with resources running in the VPC where they are created. Interface endpoints work with resources running in VPC, and also resources running in on-premises environments. Connectivty from your on-premises environment to the cloud can be provided by AWS Site-to-Site VPN or AWS Direct Connect.
-    + Interface endpoints allow you to connect to services powered by AWS PrivateLink. These services include some AWS services, services hosted by other AWS customers and partners in their own VPCs (referred to as PrivateLink Endpoint Services), and supported AWS Marketplace Partner services. For this workshop, we will focus on connecting to Amazon S3.
+Amazon CloudWatch for logging and application monitoring.
 
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+AWS Secrets Manager (if used) to store database connection strings and sensitive information.
 
+Without using a VPC Interface Endpoint, these requests would have to go through an Internet Gateway or NAT Gateway. This increases costs and reduces security.
 
-
+In this practical exercise, we will create a VPC Interface Endpoint so that the Cloud Office Backend Server can access AWS services entirely through the AWS internal network.
