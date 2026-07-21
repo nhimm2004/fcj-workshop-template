@@ -5,28 +5,48 @@ weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
+1. Deleting Objects in an Amazon S3 Bucket
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+Access the Amazon S3 Console.
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+Open the Bucket created in the workshop.
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+Select all uploaded files (e.g., office-contract-demo.pdf) and click Delete.
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+Note: Amazon S3 does not allow deleting a Bucket if it still contains data.
 
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
+2. Deleting an Amazon S3 Bucket
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+After the Bucket is empty:
 
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
+Return to the Buckets list.
 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+Select the Cloud Office Bucket.
+
+Select Delete.
+
+Enter the Bucket name to confirm.
+
+Click Delete bucket.
+
+3. Deleting an S3 Gateway Endpoint
+
+Open the Amazon VPC Console.
+
+Select Endpoints.
+
+Select the created Endpoint.
+
+Click Delete endpoint and confirm the action.
+
+After deletion, the Route Table will automatically remove the route created for the Gateway Endpoint.
+
+4. Check remaining resources
+
+Review the following services to ensure no resources are being used from the workshop:
+
+Amazon EC2
+Amazon VPC Endpoints
+Amazon S3 Buckets
+Security Groups (if created separately)
+CloudFormation Stack (if used for infrastructure deployment)
