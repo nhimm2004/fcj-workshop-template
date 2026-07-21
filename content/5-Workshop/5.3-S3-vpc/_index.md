@@ -6,13 +6,52 @@ chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-#### Using Gateway endpoint
+1. Introduction to S3 Gateway Endpoint
 
-In this section, you will create **a Gateway eendpoint** to access **Amazon S3** from **an EC2 instance**. **The Gateway endpoint** will allow upload an object to S3 buckets without using **the Public Internet**. To create an endpoint, you must specify the VPC in which you want to create the endpoint, and the service (in this case, S3) to which you want to establish the connection.
+The Amazon S3 Gateway Endpoint is a type of VPC Endpoint that allows resources within an Amazon VPC to directly access Amazon S3 services via the AWS internal network. Unlike accessing S3 via an Internet Gateway or NAT Gateway, the Gateway Endpoint uses the VPC's Route Table to route traffic to S3, preventing data from passing through the public internet.
 
-![overview](/images/5-Workshop/5.3-S3-vpc/diagram2.png)
+2. Cloud Office System Context
 
-#### Content
+In a Cloud Office system, users frequently upload and download various types of documents such as office lease agreements, office images, invoices, and customer verification documents. These documents are stored on Amazon S3 to ensure scalability and data durability.
 
-- [Create gateway endpoint](3.1-create-gwe/)
-- [Test gateway endpoint](3.2-test-gwe/)
+The system's backend is deployed on Amazon EC2 in a Private Subnet to enhance security. Without configuring an S3 Gateway Endpoint, S3 access requests would have to go through a NAT Gateway or Internet Gateway. This both increases data transmission costs and creates an unnecessary internet connection point.
+
+3. Architecture before and after configuration
+
+Before creating the Gateway Endpoint
+
+EC2 Backend
+
+│
+
+▼
+NAT Gateway
+
+│
+
+▼
+Internet
+
+│
+
+▼
+Amazon S3
+
+After creating the Gateway Endpoint
+
+EC2 Backend
+
+│
+
+▼
+Route Table
+
+│
+
+▼
+S3 Gateway Endpoint
+
+│
+
+▼
+Amazon S3
