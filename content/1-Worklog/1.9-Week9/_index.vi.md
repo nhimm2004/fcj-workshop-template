@@ -8,6 +8,7 @@ pre: " <b> 1.9. </b> "
 BÁO CÁO TUẦN 9
 
 Nội dung công việc thực hiện
+
 *Tìm hiểu tổng quan về AWS Cloud Development Kit (AWS CDK) và các thành phần cơ bản.
 *Thực hành triển khai hạ tầng AWS bằng Infrastructure as Code (IaC) thông qua AWS CDK.
 *Nghiên cứu cách xây dựng và quản lý tài nguyên AWS bằng ngôn ngữ lập trình.
@@ -18,6 +19,7 @@ Nội dung công việc thực hiện
 *Hỗ trợ xây dựng tài liệu kỹ thuật và cập nhật tiến độ dự án nhóm.
 
 Kết quả đạt được
+
 *Hiểu được nguyên lý hoạt động và lợi ích của Infrastructure as Code.
 *Nắm được quy trình triển khai hạ tầng bằng AWS CDK.
 *Hiểu cấu trúc và cách áp dụng mô hình Three-Tier Architecture vào thực tế.
@@ -26,18 +28,21 @@ Kết quả đạt được
 *Cải thiện kỹ năng làm việc nhóm, trao đổi kỹ thuật và quản lý tiến độ công việc.
 
 Khó khăn gặp phải
+
 *Chưa quen với cú pháp và cấu trúc dự án AWS CDK.
 *Khó khăn trong việc liên kết các dịch vụ AWS với nhau khi triển khai hạ tầng.
 *Mất nhiều thời gian để tìm hiểu cách tổ chức Nested Stack và quản lý dependencies giữa các tài nguyên.
 *Một số lỗi phát sinh trong quá trình deploy và cấu hình dịch vụ.
 
 Cách giải quyết
+
 *Đọc thêm tài liệu chính thức của AWS CDK và tham khảo các ví dụ thực hành.
 *Trao đổi với mentor và các thành viên trong nhóm để hiểu rõ hơn về kiến trúc hệ thống.
 *Thực hiện deploy thử nghiệm nhiều lần để xác định nguyên nhân lỗi.
 *Chia nhỏ từng thành phần hạ tầng để kiểm tra và xử lý dễ dàng hơn.
 
 Kế hoạch tuần tiếp theo
+
 *Tìm hiểu kiến trúc Serverless trên AWS.
 *Thực hành xây dựng ứng dụng sử dụng AWS Lambda, API Gateway và DynamoDB.
 *Nghiên cứu quy trình CI/CD với AWS CodePipeline.
