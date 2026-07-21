@@ -6,38 +6,69 @@ chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-In this section you will create and test an S3 interface endpoint using the simulated on-premises environment deployed as part of this workshop.
+Objective
 
-1. Return to the Amazon VPC menu. In the navigation pane, choose Endpoints, then click Create Endpoint.
+In this section, we will create an Interface Endpoint for the AWS services that Cloud Office uses.
 
-2. In Create endpoint console:
-+ Name the interface endpoint
-+ In Service category, choose **aws services** 
+Execution
 
-![name](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint1.png)
+Open Amazon VPC
 
-3.  In the Search box, type S3 and press Enter. Select the endpoint named com.amazonaws.us-east-1.s3. Ensure that the Type column indicates Interface.
+Select
 
-![service](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint2.png)
+Endpoints
 
-4. For VPC, select VPC Cloud from the drop-down.
-{{% notice warning %}}
-Make sure to choose "VPC Cloud" and not "VPC On-prem"
-{{% /notice %}}
-+ Expand **Additional settings** and ensure that Enable DNS name is *not* selected (we will use this in the next part of the workshop)
+Select
 
-![vpc](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint3.png)
+Create endpoint
 
-5. Select 2 subnets in the following AZs: us-east-1a and us-east-1b
+Name
 
-![subnets](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint4.png)
+Name
 
-6. For Security group, choose SGforS3Endpoint:
+cloud-office-ssm-endpoint
+Service Category
 
-![sg](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint5.png)
+Select
 
-7. Keep the default policy - full access and click Create endpoint
+AWS services
+Services
 
-![success](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint-success.png)
+Find
 
-Congratulation on successfully creating S3 interface endpoint. In the next step, we will test the interface endpoint.
+Systems Manager
+
+or
+
+ssm
+
+Select the service
+
+com.amazonaws.<region>.ssm
+
+Interface
+
+VPC
+
+Select
+
+CloudOffice-VPC
+Subnets
+
+Select the Private Subnet containing the Backend Server.
+
+Select the Security Group of the Interface Endpoint.
+
+The Security Group needs to allow HTTPS (443) from the Backend Server.
+
+Private DNS
+
+Check
+
+Enable DNS name
+
+This allows the Backend Server to access the AWS service using the default domain name without changing the application.
+
+Press
+
+Create endpoint
