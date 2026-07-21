@@ -5,55 +5,30 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-
-### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 10:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+BÁO CÁO TUẦN 10
+1. Nội dung công việc thực hiện
+ ● Tiếp tục thực hành Workshop tuần 10 trên nền tảng AWS.
+ ● Tìm hiểu và thực hiện các bước triển khai dịch vụ theo hướng dẫn của workshop.
+ ● Cấu hình các tài nguyên AWS cần thiết, kiểm tra trạng thái hoạt động của hệ thống sau khi triển khai.
+ ● Kiểm tra, xác minh kết quả hoạt động của các dịch vụ và xử lý các lỗi phát sinh trong quá trình cấu hình.
+ ● Ôn tập và củng cố kiến thức đã học ở các tuần trước để hiểu rõ hơn quy trình triển khai trên môi trường Cloud.
+2. Kết quả đạt được
+ ● Hoàn thành đầy đủ các bước thực hành của Workshop tuần 10.
+ ● Triển khai thành công các tài nguyên theo yêu cầu và xác nhận hệ thống hoạt động ổn định.
+ ● Hiểu rõ hơn quy trình cấu hình, triển khai và kiểm tra dịch vụ trên AWS.
+ ● Nâng cao kỹ năng sử dụng AWS Management Console và khả năng xử lý các lỗi cơ bản trong quá trình thực hành.
+3. Khó khăn gặp phải
+ ● Một số bước cấu hình có nhiều tham số nên dễ xảy ra sai sót khi thao tác.
+ ● Mất thời gian để xác định nguyên nhân khi tài nguyên không hoạt động đúng như mong đợi.
+ ● Cần đọc kỹ tài liệu hướng dẫn để tránh bỏ sót các bước quan trọng.
+4. Cách giải quyết
+ ● Kiểm tra lại từng bước cấu hình và đối chiếu với tài liệu hướng dẫn của workshop.
+ ● Kiểm tra log, trạng thái dịch vụ và các thông báo lỗi để xác định nguyên nhân.
+ ● Tra cứu tài liệu AWS và trao đổi với người hướng dẫn khi gặp lỗi khó xử lý.
+ ● Thực hiện lại các bước chưa chính xác để đảm bảo hệ thống hoạt động đúng.
+5. Kế hoạch tuần tiếp theo
+ ● Tiếp tục hoàn thành các workshop còn lại trong chương trình thực tập.
+ ● Ôn tập toàn bộ kiến thức đã học về các dịch vụ AWS và quy trình triển khai.
+ ● Thực hành triển khai lại các bài lab nhằm củng cố kỹ năng.
+ ● Chuẩn bị tài liệu, báo cáo tổng kết và hoàn thiện đồ án/thực tập theo yêu cầu.
