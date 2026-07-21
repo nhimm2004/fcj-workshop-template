@@ -1,15 +1,14 @@
 ---
-title: "Bản đề xuất"
-date: 2024-01-01
+title: "Đề xuất dự án CloudOffice"
+date: 2026-07-20
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+
+# CloudOffice – Hệ thống quản lý cho thuê văn phòng trên AWS
+
 
 # IoT Weather Platform for Lab Research  
 ## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
@@ -106,3 +105,6 @@ Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.p
 ### 8. Kết quả kỳ vọng  
 *Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
 *Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+
+
+<img width="987" height="552" alt="z8017702787875_29f6937410b357be65366c9febe426db" src="https://github.com/user-attachments/assets/8c330df9-f62f-40a9-aa6b-ceb4b921a701" />
